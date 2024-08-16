@@ -1,0 +1,9 @@
+### IDE configuration directories ###
+
+.idea/
+.vscode/
+
+### Maven build directories ###
+
+target/
+out/
