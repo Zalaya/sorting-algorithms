@@ -17,6 +17,7 @@
 
     <modules>
         <module>selection</module>
+        <module>bubble</module>
     </modules>
 
     <dependencies>

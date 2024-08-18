@@ -1,6 +1,6 @@
 package xyz.zalaya.utilities;
 
-public class SortingAlgorithmArrayUtilities {
+public class ArrayUtilities {
 
     public static <T extends Comparable<T>> void swap(T[] array, int firstIndex, int secondIndex) {
         T temporary = array[firstIndex];
