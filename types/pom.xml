@@ -12,5 +12,18 @@
         <version>0.1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>common</artifactId>
+    <artifactId>types</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>selection</module>
+    </modules>
+
+    <dependencies>
+        <dependency>
+            <groupId>xyz.zalaya</groupId>
+            <artifactId>common</artifactId>
+            <version>0.1.0-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 </project>

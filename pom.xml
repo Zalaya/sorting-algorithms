@@ -12,8 +12,8 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>selection</module>
         <module>common</module>
+        <module>types</module>
     </modules>
 
     <properties>
