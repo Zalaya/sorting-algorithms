@@ -13,7 +13,7 @@
 
     <modules>
         <module>selection</module>
-        <module>bubble</module>
+        <module>common</module>
     </modules>
 
     <properties>
@@ -21,4 +21,12 @@
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.11.0</version>
+        </dependency>
+    </dependencies>
 </project>
