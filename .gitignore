@@ -3,11 +3,14 @@
 .idea/
 .vscode/
 
+### IDE configuration files ###
+
+*.iml
+
 ### Maven build directories ###
 
 target/
 out/
-
 
 ### Gradle build directories ###
 
