@@ -28,15 +28,15 @@ More algorithms will be added over time to expand this educational resource.
 
 The project is organized into several key directories:
 
-- `src/main/java/xyz/zalaya/algorithms`: Contains the core implementations of the sorting algorithms.
-- `src/test/java/xyz/zalaya/algorithms`: Contains unit tests to validate the correctness of the algorithms.
+- `src/main/java/xyz/zalaya/sorting/algorithms`: Contains the core implementations of the sorting algorithms.
+- `src/test/java/xyz/zalaya/sorting/algorithms`: Contains unit tests to validate the correctness of the algorithms.
 - `.editorconfig`: Provides configuration for consistent code style across different IDEs and text editors.
 
 The project is designed to be modular and easy to navigate, with all implementations and tests neatly organized for clarity and learning purposes.
 
 ## Testing
 
-Testing is a critical part of understanding and validating algorithms. This project includes unit tests in the `src/test/java/xyz/zalaya/algorithms/implementations` directory to verify the correctness and performance of the sorting algorithms.
+Testing is a critical part of understanding and validating algorithms. This project includes unit tests in the `src/test/java/xyz/zalaya/sorting/algorithms/implementations` directory to verify the correctness and performance of the sorting algorithms.
 
 To run the tests, simply execute:
 
