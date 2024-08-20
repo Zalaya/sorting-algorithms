@@ -1,6 +1,6 @@
-package xyz.zalaya.algorithms.implementations;
+package xyz.zalaya.sorting.algorithms.implementations;
 
-import xyz.zalaya.algorithms.SortingAlgorithm;
+import xyz.zalaya.sorting.algorithms.SortingAlgorithm;
 
 public class BubbleSortingAlgorithm implements SortingAlgorithm {
 
@@ -28,10 +28,10 @@ public class BubbleSortingAlgorithm implements SortingAlgorithm {
         return swapped;
     }
 
-    private <T extends Comparable<T>> void swap(T[] array, int firstIndex, int secondIndex) {
-        T temporary = array[firstIndex];
-        array[firstIndex] = array[secondIndex];
-        array[secondIndex] = temporary;
+    private <T extends Comparable<T>> void swap(T[] unsortedArray, int firstIndex, int secondIndex) {
+        T temporary = unsortedArray[firstIndex];
+        unsortedArray[firstIndex] = unsortedArray[secondIndex];
+        unsortedArray[secondIndex] = temporary;
     }
 
 }
