@@ -1,7 +1,7 @@
-package xyz.zalaya.algorithms.implementations;
+package xyz.zalaya.sorting.algorithms.implementations;
 
-import xyz.zalaya.algorithms.SortingAlgorithm;
-import xyz.zalaya.algorithms.SortingAlgorithmTest;
+import xyz.zalaya.sorting.algorithms.SortingAlgorithm;
+import xyz.zalaya.sorting.algorithms.SortingAlgorithmTest;
 
 public class BubbleSortingAlgorithmTest extends SortingAlgorithmTest {
 

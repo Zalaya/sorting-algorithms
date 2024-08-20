@@ -1,6 +1,6 @@
-package xyz.zalaya.algorithms.implementations;
+package xyz.zalaya.sorting.algorithms.implementations;
 
-import xyz.zalaya.algorithms.SortingAlgorithm;
+import xyz.zalaya.sorting.algorithms.SortingAlgorithm;
 
 public class SelectionSortingAlgorithm implements SortingAlgorithm {
 
