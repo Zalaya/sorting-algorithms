@@ -125,7 +125,7 @@ public abstract class SortingAlgorithmTest {
         );
     }
 
-    @ParameterizedTest
+    @ParameterizedTest(name = "{index}: Sorting {0} -> Expected {1}")
     @MethodSource({ "getIntegerArrays", "getDoubleArrays", "getByteArrays", "getShortArray", "getLongArrays", "getFloatArrays", "getBooleanArrays", "getCharacterArrays", "getStringArrays" })
     public <T extends Comparable<T>> void shouldSortArray(T[] unsortedArray, T[] expectedSortedArray) {
         assertArrayEquals(expectedSortedArray, getSortingAlgorithm().sort(unsortedArray));
