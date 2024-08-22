@@ -39,6 +39,7 @@ jobs:
         steps:
             -   name: Install Maven dependencies
                 run: mvn install -D skipTests -D skipITs
+                working-directory: ${{ github.workspace }}
 
     test:
         runs-on: ubuntu-latest
@@ -46,6 +47,7 @@ jobs:
         steps:
             -   name: Run tests
                 run: mvn test
+                working-directory: ${{ github.workspace }}
                 continue-on-error: false
 
     upload:
