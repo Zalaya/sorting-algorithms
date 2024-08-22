@@ -21,6 +21,10 @@ This project showcases different sorting techniques with clear and concise Java 
 
 - **Bubble Sort:** A basic comparison-based sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order.
 - **Selection Sort:** An algorithm that divides the input list into two parts: the sorted part at the beginning and the unsorted part at the end, and repeatedly selects the smallest (or largest) element from the unsorted part.
+- **Insertion Sort:** A simple sorting algorithm that builds the final sorted array one item at a time, inserting each element into its correct position.
+- **Merge Sort:** A divide-and-conquer algorithm that divides the input array into two halves, recursively sorts the two halves, and then merges the sorted halves.
+- **Quick Sort:** A divide-and-conquer algorithm that selects a "pivot" element and partitions the array around the pivot, then recursively sorts the subarrays.
+- **Heap Sort:** A comparison-based sorting algorithm that uses a binary heap data structure to sort elements in place.
 
 More algorithms will be added over time to expand this educational resource.
 
