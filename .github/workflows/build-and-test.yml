@@ -38,7 +38,7 @@ jobs:
         needs: cache
         steps:
             -   name: Install Maven dependencies
-                run: mvn install -DskipTests -DskipITs
+                run: mvn install -D skipTests -D skipITs
 
     test:
         runs-on: ubuntu-latest
