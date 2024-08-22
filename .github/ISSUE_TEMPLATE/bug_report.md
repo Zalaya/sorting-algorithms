@@ -1,3 +1,10 @@
+name: Bug Report
+description: Create a report to help us improve the project.
+title: "[Bug] Brief description of the issue"
+labels: [bug]
+assignees: ""
+---
+
 # Bug Report
 
 ### Description
