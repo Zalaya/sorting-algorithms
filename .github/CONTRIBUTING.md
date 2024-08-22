@@ -11,6 +11,10 @@ Thank you for considering contributing to our project! To maintain a high-qualit
 - [Labels](#labels)
     - [Labels Overview](#labels-overview)
     - [Labels Table](#labels-table)
+- [Issues](#issues)
+    - [Examples](#issue-examples)
+- [Pull Requests](#pull-requests)
+    - [Examples](#pull-request-examples)
 
 ## Commit Messages
 
@@ -92,5 +96,21 @@ Labels help to categorize issues and pull requests, making it easier to manage a
 | **Status: Paused**      | Marks the issue or pull request as temporarily on hold.                         |
 | **Status: In progress** | Indicates that work on the issue or pull request is currently underway.         |
 | **Status: To do**       | Denotes that the issue or pull request is pending and has not been started yet. |
+
+## Issues
+
+An issue should be created for each task, bug, or feature that needs to be addressed. When creating an issue, please provide a clear and detailed description of the problem or task, along with any relevant information or context. Make sure to assign the appropriate labels to the issue to help categorize and prioritize it.
+
+### Examples
+
+<img src="../assets/images/issue.png" alt="Issue Example 1" width="600" />
+
+## Pull Requests
+
+Pull requests should be created for each task or feature that is being worked on. When creating a pull request, please provide a clear and concise description of the changes made, along with any relevant information or context. Make sure to reference the issue that the pull request addresses and assign the appropriate labels to the pull request.
+
+### Examples
+
+<img src="../assets/images/pull-request.png" alt="Pull Request Example 1" width="600" />
 
 Following these guidelines will help maintain a structured and effective workflow for contributing to the project. Thank you for your contributions!
