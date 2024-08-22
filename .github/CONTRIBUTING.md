@@ -8,6 +8,9 @@ Thank you for considering contributing to our project! To maintain a high-qualit
     - [Commit Message Format](#commit-message-format)
     - [Commit Types](#commit-types)
     - [Examples](#examples)
+- [Labels](#labels)
+    - [Labels Overview](#labels-overview)
+    - [Labels Table](#labels-table)
 
 ## Commit Messages
 
@@ -56,3 +59,38 @@ Use one of the following types to categorize your commit:
 - **test(bubble): add test cases for bubble sort algorithm**
 - **style(bubble): format bubble sort algorithm code**
 - **build(dependencies): update dependencies to latest versions**
+
+## Labels
+
+Labels help to categorize issues and pull requests, making it easier to manage and track them. Here are the available labels and their descriptions:
+
+### Labels Overview
+
+- **Bug**: Indicates that the issue or pull request addresses a bug in the codebase.
+- **Difficulty**: Categorizes the issue by the level of difficulty (Easy, Medium, Hard).
+- **Documentation**: Relates to changes or updates in documentation.
+- **Enhancement**: Refers to improvements or upgrades to existing features.
+- **Feature**: Denotes the addition of a new feature.
+- **Priority**: Indicates the importance of the issue (High, Medium, Low).
+- **Status**: Shows the current status of the issue or pull request (To do, In progress, Paused, Done).
+
+### Labels Table
+
+| Label                   | Description                                                                     |
+|-------------------------|---------------------------------------------------------------------------------|
+| **Bug**                 | Identifies issues that involve bugs or defects in the codebase.                 |
+| **Enhancement**         | Represents requests for improvements or enhancements to existing features.      |
+| **Feature**             | Indicates the addition of a new functionality or feature to the project.        |
+| **Documentation**       | Refers to tasks related to creating or updating project documentation.          |
+| **Difficulty: Easy**    | Indicates that the issue is relatively simple and suitable for beginners.       |
+| **Difficulty: Medium**  | Suggests that the issue requires a moderate level of effort and experience.     |
+| **Difficulty: Hard**    | Marks issues that are complex and require advanced knowledge or skills.         |
+| **Priority: High**      | Highlights issues or pull requests that require immediate attention.            |
+| **Priority: Medium**    | Suggests that the issue or pull request is important but not urgent.            |
+| **Priority: Low**       | Indicates that the issue or pull request has lower urgency.                     |
+| **Status: Done**        | Shows that the issue or pull request has been completed.                        |
+| **Status: Paused**      | Marks the issue or pull request as temporarily on hold.                         |
+| **Status: In progress** | Indicates that work on the issue or pull request is currently underway.         |
+| **Status: To do**       | Denotes that the issue or pull request is pending and has not been started yet. |
+
+Following these guidelines will help maintain a structured and effective workflow for contributing to the project. Thank you for your contributions!
