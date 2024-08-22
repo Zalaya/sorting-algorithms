@@ -12,9 +12,9 @@ Thank you for considering contributing to our project! To maintain a high-qualit
     - [Labels Overview](#labels-overview)
     - [Labels Table](#labels-table)
 - [Issues](#issues)
-    - [Examples](#issue-examples)
+    - [Examples](#examples-1)
 - [Pull Requests](#pull-requests)
-    - [Examples](#pull-request-examples)
+    - [Examples](#examples-2)
 
 ## Commit Messages
 
