@@ -23,7 +23,7 @@ jobs:
             -   name: Set Up JDK 17
                 uses: actions/setup-java@v3
                 with:
-                    distribution: 'adopt-openjdk'
+                    distribution: 'adopt'
                     java-version: '17'
 
     cache:
@@ -48,7 +48,7 @@ jobs:
                     path: ${{ github.workspace }}
 
             -   name: Install Maven Dependencies
-                run: mvn install -DskipTests -DskipITs
+                run: mvn install -D skipTests -D skipITs
                 working-directory: ${{ github.workspace }}
 
     test:
