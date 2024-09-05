@@ -54,8 +54,8 @@ This will ensure that all algorithms behave as expected under various conditions
 
 Contributions are welcome! Whether you want to add new sorting algorithms, optimize existing ones, or improve the documentation, your input is valuable.
 
-For more information on how to contribute, please check the [CONTRIBUTING.md](.github/CONTRIBUTING.md) file.
+For more information on how to contribute, please check the [CONTRIBUTING.md](CONTRIBUTING.md) file.
 
 ## License
 
-This project is licensed under the [GNU General Public License v3.0](.github/LICENSE). For more details, please refer to the [LICENSE.md](.github/LICENSE) file.
+This project is licensed under the [GNU General Public License v3.0](LICENSE.md). For more details, please refer to the [LICENSE.md](LICENSE.md) file.

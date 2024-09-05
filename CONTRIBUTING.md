@@ -103,7 +103,7 @@ An issue should be created for each task, bug, or feature that needs to be addre
 
 ### Examples
 
-<img src="../assets/images/issue.png" alt="Issue Example 1" width="600" />
+<img src="assets/images/issue.png" alt="Issue Example 1" width="600" />
 
 ## Pull Requests
 
@@ -111,6 +111,6 @@ Pull requests should be created for each task or feature that is being worked on
 
 ### Examples
 
-<img src="../assets/images/pull-request.png" alt="Pull Request Example 1" width="600" />
+<img src="assets/images/pull-request.png" alt="Pull Request Example 1" width="600" />
 
 Following these guidelines will help maintain a structured and effective workflow for contributing to the project. Thank you for your contributions!
