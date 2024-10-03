@@ -58,4 +58,4 @@ For more information on how to contribute, please check the [CONTRIBUTING.md](CO
 
 ## License
 
-This project is licensed under the [GNU General Public License v3.0](LICENSE.md). For more details, please refer to the [LICENSE.md](LICENSE.md) file.
+This project is licensed under the [GNU General Public License v3.0](LICENSE). For more details, please refer to the [LICENSE.md](LICENSE) file.
