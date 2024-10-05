@@ -1,7 +1,7 @@
-package xyz.zalaya.sorting.algorithms.implementations;
+package xyz.zalaya.sorting.algorithms.divide;
 
-import xyz.zalaya.sorting.algorithms.SortingAlgorithm;
-import xyz.zalaya.sorting.algorithms.SortingAlgorithmTest;
+import xyz.zalaya.sorting.core.SortingAlgorithm;
+import xyz.zalaya.sorting.core.SortingAlgorithmTest;
 
 public class MergeSortingAlgorithmTest extends SortingAlgorithmTest {
 

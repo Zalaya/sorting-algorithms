@@ -1,4 +1,4 @@
-package xyz.zalaya.sorting.algorithms;
+package xyz.zalaya.sorting.core;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;

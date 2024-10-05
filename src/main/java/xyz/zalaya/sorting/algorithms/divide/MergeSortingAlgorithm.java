@@ -1,6 +1,6 @@
-package xyz.zalaya.sorting.algorithms.implementations;
+package xyz.zalaya.sorting.algorithms.divide;
 
-import xyz.zalaya.sorting.algorithms.SortingAlgorithm;
+import xyz.zalaya.sorting.core.SortingAlgorithm;
 
 import java.util.Arrays;
 
