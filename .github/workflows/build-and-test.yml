@@ -9,16 +9,20 @@ on:
             - main
 
 jobs:
+
     build-and-test:
         runs-on: ubuntu-latest
+
         steps:
             -   name: Checkout repository
                 uses: actions/checkout@v4
+
             -   name: Set up JDK 17
                 uses: actions/setup-java@v3
                 with:
                     distribution: 'adopt'
                     java-version: '17'
+
             -   name: Cache Maven dependencies
                 uses: actions/cache@v4
                 with:
@@ -26,8 +30,10 @@ jobs:
                     key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
                     restore-keys: |
                         ${{ runner.os }}-maven
+
             -   name: Build the project
                 run: mvn install -D skipTests -D skipITs
+
             -   name: Run unit tests
                 run: mvn test
                 continue-on-error: false
