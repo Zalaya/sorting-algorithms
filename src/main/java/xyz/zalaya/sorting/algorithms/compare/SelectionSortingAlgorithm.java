@@ -5,19 +5,19 @@ import xyz.zalaya.sorting.core.SortingAlgorithm;
 public class SelectionSortingAlgorithm implements SortingAlgorithm {
 
     @Override
-    public <T extends Comparable<T>> T[] sort(T[] unsortedArray) {
-        for (int i = 0; i < unsortedArray.length - 1; i++) {
-            swap(unsortedArray, i, findMinimumElementIndex(unsortedArray, i));
+    public <T extends Comparable<T>> T[] sort(T[] array) {
+        for (int i = 0; i < array.length - 1; i++) {
+            swap(array, i, findMinimumElementIndex(array, i));
         }
 
-        return unsortedArray;
+        return array;
     }
 
-    private <T extends Comparable<T>> int findMinimumElementIndex(T[] unsortedArray, int startIndex) {
+    private <T extends Comparable<T>> int findMinimumElementIndex(T[] array, int startIndex) {
         int minimumElementIndex = startIndex;
 
-        for (int i = startIndex + 1; i < unsortedArray.length; i++) {
-            if (unsortedArray[i].compareTo(unsortedArray[minimumElementIndex]) < 0) {
+        for (int i = startIndex + 1; i < array.length; i++) {
+            if (array[i].compareTo(array[minimumElementIndex]) < 0) {
                 minimumElementIndex = i;
             }
         }
@@ -25,10 +25,10 @@ public class SelectionSortingAlgorithm implements SortingAlgorithm {
         return minimumElementIndex;
     }
 
-    private <T extends Comparable<T>> void swap(T[] unsortedArray, int firstIndex, int secondIndex) {
-        T temporary = unsortedArray[firstIndex];
-        unsortedArray[firstIndex] = unsortedArray[secondIndex];
-        unsortedArray[secondIndex] = temporary;
+    private <T extends Comparable<T>> void swap(T[] array, int firstIndex, int secondIndex) {
+        T temporary = array[firstIndex];
+        array[firstIndex] = array[secondIndex];
+        array[secondIndex] = temporary;
     }
 
 }
