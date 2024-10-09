@@ -1,8 +1,4 @@
-package xyz.zalaya.sorting.algorithms.compare;
-
-import xyz.zalaya.sorting.core.SortingAlgorithm;
-
-public class SelectionSortingAlgorithm implements SortingAlgorithm {
+public class Algorithm implements SortingAlgorithm {
 
     @Override
     public <T extends Comparable<T>> T[] sort(T[] array) {
