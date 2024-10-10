@@ -11,9 +11,3 @@
 
 target/
 out/
-
-### Gradle build directories ###
-
-build/
-gradle/
-.gradle/
