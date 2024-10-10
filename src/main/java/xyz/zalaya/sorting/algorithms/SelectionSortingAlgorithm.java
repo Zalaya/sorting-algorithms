@@ -1,4 +1,8 @@
-public class Algorithm implements SortingAlgorithm {
+package xyz.zalaya.sorting.algorithms;
+
+import xyz.zalaya.sorting.core.SortingAlgorithm;
+
+public class SelectionSortingAlgorithm implements SortingAlgorithm {
 
     @Override
     public <T extends Comparable<T>> T[] sort(T[] array) {
@@ -22,6 +26,10 @@ public class Algorithm implements SortingAlgorithm {
     }
 
     private <T extends Comparable<T>> void swap(T[] array, int firstIndex, int secondIndex) {
+        if (firstIndex == secondIndex) {
+            return;
+        }
+
         T temporary = array[firstIndex];
         array[firstIndex] = array[secondIndex];
         array[secondIndex] = temporary;
