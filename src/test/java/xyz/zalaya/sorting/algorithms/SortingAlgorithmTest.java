@@ -1,4 +1,4 @@
-package xyz.zalaya.sorting.core;
+package xyz.zalaya.sorting.algorithms;
 
 import org.junit.jupiter.api.Test;
 

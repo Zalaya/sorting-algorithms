@@ -1,7 +1,7 @@
-package xyz.zalaya.sorting.algorithms;
+package xyz.zalaya.sorting.algorithms.implementations;
 
-import xyz.zalaya.sorting.core.SortingAlgorithm;
-import xyz.zalaya.sorting.core.SortingAlgorithmTest;
+import xyz.zalaya.sorting.algorithms.SortingAlgorithm;
+import xyz.zalaya.sorting.algorithms.SortingAlgorithmTest;
 
 public class SelectionSortingAlgorithmTest extends SortingAlgorithmTest {
 
