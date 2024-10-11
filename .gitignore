@@ -7,7 +7,6 @@
 
 *.iml
 
-### Maven build directories ###
+### Node.js ###
 
-target/
-out/
+node_modules/
