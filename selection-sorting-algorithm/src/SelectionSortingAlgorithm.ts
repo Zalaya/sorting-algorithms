@@ -23,9 +23,9 @@ export class SelectionSortingAlgorithm implements SortingAlgorithm {
     }
 
     private swap(array: number[], firstIndex: number, secondIndex: number): void {
-        const temp = array[firstIndex];
+        const temporary = array[firstIndex];
         array[firstIndex] = array[secondIndex];
-        array[secondIndex] = temp;
+        array[secondIndex] = temporary;
     }
 
 }
