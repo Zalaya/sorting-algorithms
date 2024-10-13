@@ -1,4 +1,4 @@
-import { SortingAlgorithm } from "../../shared/src/SortingAlgorithm";
+import { SortingAlgorithm } from "../SortingAlgorithm";
 
 export class SelectionSortingAlgorithm implements SortingAlgorithm {
 
