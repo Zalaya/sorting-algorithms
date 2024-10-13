@@ -6,11 +6,3 @@
 ### IDE configuration files ###
 
 *.iml
-
-### Node.js ###
-
-node_modules/
-
-### Jest ###
-
-coverage/
