@@ -8,10 +8,21 @@ import java.util.stream.Stream;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 
+/**
+ * Abstract class for testing sorting algorithms.
+ */
 public abstract class SortingAlgorithmTest {
 
+    /**
+     * Get the sorting algorithm to test.
+     * @return The sorting algorithm to test.
+     */
     public abstract SortingAlgorithm getSortingAlgorithm();
 
+    /**
+     * Get a stream of arguments for testing sorting algorithms with integer arrays.
+     * @return A stream of arguments for testing sorting algorithms with integer arrays.
+     */
     private static Stream<Arguments> getIntegerArrays() {
         return Stream.of(
             Arguments.of(new Integer[] { }, new Integer[] { }),
@@ -21,6 +32,10 @@ public abstract class SortingAlgorithmTest {
         );
     }
 
+    /**
+     * Get a stream of arguments for testing sorting algorithms with double arrays.
+     * @return A stream of arguments for testing sorting algorithms with double arrays.
+     */
     private static Stream<Arguments> getDoubleArrays() {
         return Stream.of(
             Arguments.of(new Double[] { }, new Double[] { }),
@@ -30,6 +45,10 @@ public abstract class SortingAlgorithmTest {
         );
     }
 
+    /**
+     * Get a stream of arguments for testing sorting algorithms with byte arrays.
+     * @return A stream of arguments for testing sorting algorithms with byte arrays.
+     */
     private static Stream<Arguments> getByteArrays() {
         return Stream.of(
             Arguments.of(new Byte[] { }, new Byte[] { }),
@@ -39,6 +58,10 @@ public abstract class SortingAlgorithmTest {
         );
     }
 
+    /**
+     * Get a stream of arguments for testing sorting algorithms with short arrays.
+     * @return A stream of arguments for testing sorting algorithms with short arrays.
+     */
     private static Stream<Arguments> getShortArray() {
         return Stream.of(
             Arguments.of(new Short[] { }, new Short[] { }),
@@ -48,6 +71,10 @@ public abstract class SortingAlgorithmTest {
         );
     }
 
+    /**
+     * Get a stream of arguments for testing sorting algorithms with long arrays.
+     * @return A stream of arguments for testing sorting algorithms with long arrays.
+     */
     private static Stream<Arguments> getLongArrays() {
         return Stream.of(
             Arguments.of(new Long[] { }, new Long[] { }),
@@ -57,6 +84,10 @@ public abstract class SortingAlgorithmTest {
         );
     }
 
+    /**
+     * Get a stream of arguments for testing sorting algorithms with float arrays.
+     * @return A stream of arguments for testing sorting algorithms with float arrays.
+     */
     private static Stream<Arguments> getFloatArrays() {
         return Stream.of(
             Arguments.of(new Float[] { }, new Float[] { }),
@@ -66,6 +97,10 @@ public abstract class SortingAlgorithmTest {
         );
     }
 
+    /**
+     * Get a stream of arguments for testing sorting algorithms with character arrays.
+     * @return A stream of arguments for testing sorting algorithms with character arrays.
+     */
     private static Stream<Arguments> getCharacterArrays() {
         return Stream.of(
             Arguments.of(new Character[] { }, new Character[] { }),
@@ -75,6 +110,11 @@ public abstract class SortingAlgorithmTest {
         );
     }
 
+    /**
+     * Test that the sorting algorithm sorts the array correctly.
+     * @param unsortedArray The unsorted array.
+     * @param expectedSortedArray The expected sorted array.
+     */
     @ParameterizedTest
     @MethodSource({ "getIntegerArrays", "getDoubleArrays", "getByteArrays", "getShortArray", "getLongArrays", "getFloatArrays", "getCharacterArrays" })
     public <T extends Comparable<T>> void shouldSortArray(T[] unsortedArray, T[] expectedSortedArray) {
