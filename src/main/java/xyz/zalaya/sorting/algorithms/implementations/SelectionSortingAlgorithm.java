@@ -2,6 +2,10 @@ package xyz.zalaya.sorting.algorithms.implementations;
 
 import xyz.zalaya.sorting.algorithms.SortingAlgorithm;
 
+/**
+ * Implementation of the selection sorting algorithm.
+ * It implements the {@link SortingAlgorithm} interface.
+ */
 public class SelectionSortingAlgorithm implements SortingAlgorithm {
 
     @Override
@@ -13,6 +17,12 @@ public class SelectionSortingAlgorithm implements SortingAlgorithm {
         return array;
     }
 
+    /**
+     * Find the index of the minimum element in the array.
+     * @param array The array to search.
+     * @param startIndex The index to start searching from.
+     * @return The index of the minimum element.
+     */
     private <T extends Comparable<T>> int findMinimumElementIndex(T[] array, int startIndex) {
         int minimumElementIndex = startIndex;
 
@@ -25,6 +35,12 @@ public class SelectionSortingAlgorithm implements SortingAlgorithm {
         return minimumElementIndex;
     }
 
+    /**
+     * Swap two elements in the array.
+     * @param array The array to swap elements in.
+     * @param firstIndex The index of the first element.
+     * @param secondIndex The index of the second element.
+     */
     private <T extends Comparable<T>> void swap(T[] array, int firstIndex, int secondIndex) {
         T temporary = array[firstIndex];
         array[firstIndex] = array[secondIndex];
