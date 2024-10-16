@@ -41,18 +41,17 @@ public class QuickSortingAlgorithm implements SortingAlgorithm {
      */
     private <T extends Comparable<T>> int partition(T[] array, int startIndex, int endIndex) {
         T pivot = array[endIndex];
-        int i = startIndex - 1;
+        int partitionIndex = startIndex;
 
-        for (int j = startIndex; j < endIndex; j++) {
-            if (array[j].compareTo(pivot) < 0) {
-                i++;
-                swap(array, i, j);
+        for (int i = startIndex; i < endIndex; i++) {
+            if (array[i].compareTo(pivot) <= 0) {
+                swap(array, i, partitionIndex++);
             }
         }
 
-        swap(array, i + 1, endIndex);
+        swap(array, partitionIndex, endIndex);
 
-        return i + 1;
+        return partitionIndex;
     }
 
 }
