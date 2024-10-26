@@ -2,8 +2,6 @@ package xyz.zalaya.sorting.algorithms.implementations;
 
 import xyz.zalaya.sorting.algorithms.SortingAlgorithm;
 
-import static xyz.zalaya.sorting.utilities.ArrayUtilities.insertElement;
-
 /**
  * Implementation of the insertion sorting algorithm.
  * It implements the {@link SortingAlgorithm} interface.
@@ -42,6 +40,21 @@ public class InsertionSortingAlgorithm implements SortingAlgorithm {
         }
 
         return insertionIndex;
+    }
+
+    /**
+     * Insert an element into the array at the specified index.
+     * @param array The array to insert the element into.
+     * @param element The element to insert.
+     * @param currentIndex The current index of the element.
+     * @param insertionIndex The index to insert the element at.
+     */
+    private <T extends Comparable<T>> void insertElement(T[] array, T element, int currentIndex, int insertionIndex) {
+        for (int i = currentIndex; i > insertionIndex; i--) {
+            array[i] = array[i - 1];
+        }
+
+        array[insertionIndex] = element;
     }
 
 }

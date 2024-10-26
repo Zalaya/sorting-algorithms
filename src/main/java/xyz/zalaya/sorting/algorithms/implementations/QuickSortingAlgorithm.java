@@ -2,8 +2,6 @@ package xyz.zalaya.sorting.algorithms.implementations;
 
 import xyz.zalaya.sorting.algorithms.SortingAlgorithm;
 
-import static xyz.zalaya.sorting.utilities.ArrayUtilities.swap;
-
 /**
  * Implementation of the quick sorting algorithm.
  * It implements the {@link SortingAlgorithm} interface.
@@ -52,6 +50,18 @@ public class QuickSortingAlgorithm implements SortingAlgorithm {
         swap(array, partitionIndex, endIndex);
 
         return partitionIndex;
+    }
+
+    /**
+     * Swap two elements in the array.
+     * @param array The array to swap elements in.
+     * @param firstIndex The index of the first element.
+     * @param secondIndex The index of the second element.
+     */
+    private <T extends Comparable<T>> void swap(T[] array, int firstIndex, int secondIndex) {
+        T temporary = array[firstIndex];
+        array[firstIndex] = array[secondIndex];
+        array[secondIndex] = temporary;
     }
 
 }
