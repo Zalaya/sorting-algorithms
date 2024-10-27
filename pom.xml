@@ -59,12 +59,6 @@
                 <junit.test-class>xyz.zalaya.sorting.algorithms.SelectionSortingAlgorithmTest</junit.test-class>
             </properties>
         </profile>
-        <profile>
-            <id>quick</id>
-            <properties>
-                <junit.test-class>xyz.zalaya.sorting.algorithms.QuickSortingAlgorithmTest</junit.test-class>
-            </properties>
-        </profile>
     </profiles>
 
     <build>
