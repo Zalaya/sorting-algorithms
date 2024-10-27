@@ -1,6 +1,6 @@
-package xyz.zalaya.sorting.algorithms.implementations;
+package xyz.zalaya.sorting.algorithms;
 
-import xyz.zalaya.sorting.algorithms.SortingAlgorithm;
+import xyz.zalaya.sorting.contracts.SortingAlgorithm;
 
 /**
  * Implementation of the bubble sorting algorithm.

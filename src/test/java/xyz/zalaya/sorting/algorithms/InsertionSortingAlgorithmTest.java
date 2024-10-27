@@ -1,7 +1,7 @@
-package xyz.zalaya.sorting.algorithms.implementations;
+package xyz.zalaya.sorting.algorithms;
 
-import xyz.zalaya.sorting.algorithms.SortingAlgorithm;
-import xyz.zalaya.sorting.algorithms.SortingAlgorithmTest;
+import xyz.zalaya.sorting.contracts.SortingAlgorithm;
+import xyz.zalaya.sorting.contracts.SortingAlgorithmTest;
 
 /**
  * Test class for the insertion sorting algorithm.

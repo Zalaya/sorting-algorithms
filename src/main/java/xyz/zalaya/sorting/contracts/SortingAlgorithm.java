@@ -1,4 +1,4 @@
-package xyz.zalaya.sorting.algorithms;
+package xyz.zalaya.sorting.contracts;
 
 import java.util.Arrays;
 import java.util.List;
