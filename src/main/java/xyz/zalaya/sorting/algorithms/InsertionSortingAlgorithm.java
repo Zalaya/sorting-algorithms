@@ -11,19 +11,26 @@ public class InsertionSortingAlgorithm implements SortingAlgorithm {
     @Override
     public <T extends Comparable<T>> T[] sort(T[] array) {
         for (int i = 1; i < array.length; i++) {
-            pass(array, i);
+            iteration(array, i);
         }
 
         return array;
     }
 
     /**
-     * Perform a pass of the insertion sorting algorithm.
+     * Perform an iteration of the insertion sorting algorithm.
      * @param array The array to sort.
      * @param startIndex The index to start sorting from.
      */
-    private <T extends Comparable<T>> void pass(T[] array, int startIndex) {
-        insertElement(array, array[startIndex], startIndex, findInsertionIndex(array, startIndex));
+    private <T extends Comparable<T>> void iteration(T[] array, int startIndex) {
+        int insertionIndex = findInsertionIndex(array, startIndex);
+        T element = array[startIndex];
+
+        for (int i = startIndex; i > insertionIndex; i--) {
+            array[i] = array[i - 1];
+        }
+
+        array[insertionIndex] = element;
     }
 
     /**
@@ -40,21 +47,6 @@ public class InsertionSortingAlgorithm implements SortingAlgorithm {
         }
 
         return insertionIndex;
-    }
-
-    /**
-     * Insert an element into the array at the specified index.
-     * @param array The array to insert the element into.
-     * @param element The element to insert.
-     * @param currentIndex The current index of the element.
-     * @param insertionIndex The index to insert the element at.
-     */
-    private <T extends Comparable<T>> void insertElement(T[] array, T element, int currentIndex, int insertionIndex) {
-        for (int i = currentIndex; i > insertionIndex; i--) {
-            array[i] = array[i - 1];
-        }
-
-        array[insertionIndex] = element;
     }
 
 }
