@@ -14,6 +14,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <junit.test-class>**/*Test.java</junit.test-class>
         <junit.jupiter.version>5.11.0</junit.jupiter.version>
         <maven.surefile.plugin.version>3.3.1</maven.surefile.plugin.version>
     </properties>
@@ -39,6 +40,33 @@
         </dependency>
     </dependencies>
 
+    <profiles>
+        <profile>
+            <id>bubble</id>
+            <properties>
+                <junit.test-class>xyz.zalaya.sorting.algorithms.BubbleSortingAlgorithmTest</junit.test-class>
+            </properties>
+        </profile>
+        <profile>
+            <id>insertion</id>
+            <properties>
+                <junit.test-class>xyz.zalaya.sorting.algorithms.InsertionSortingAlgorithmTest</junit.test-class>
+            </properties>
+        </profile>
+        <profile>
+            <id>selection</id>
+            <properties>
+                <junit.test-class>xyz.zalaya.sorting.algorithms.SelectionSortingAlgorithmTest</junit.test-class>
+            </properties>
+        </profile>
+        <profile>
+            <id>quick</id>
+            <properties>
+                <junit.test-class>xyz.zalaya.sorting.algorithms.QuickSortingAlgorithmTest</junit.test-class>
+            </properties>
+        </profile>
+    </profiles>
+
     <build>
         <plugins>
             <plugin>
@@ -47,7 +75,7 @@
                 <version>${maven.surefile.plugin.version}</version>
                 <configuration>
                     <includes>
-                        <include>**/*Test.java</include>
+                        <include>${junit.test-class}</include>
                     </includes>
                 </configuration>
             </plugin>
