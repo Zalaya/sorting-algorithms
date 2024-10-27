@@ -2,6 +2,8 @@ package xyz.zalaya.sorting.algorithms;
 
 import xyz.zalaya.sorting.contracts.SortingAlgorithm;
 
+import static xyz.zalaya.sorting.utilities.SwapUtilities.swap;
+
 /**
  * Implementation of the bubble sorting algorithm.
  * It implements the {@link SortingAlgorithm} interface.
@@ -36,18 +38,6 @@ public class BubbleSortingAlgorithm implements SortingAlgorithm {
         }
 
         return swapped;
-    }
-
-    /**
-     * Swap two elements in the array.
-     * @param array The array to swap elements in.
-     * @param firstIndex The index of the first element.
-     * @param secondIndex The index of the second element.
-     */
-    private <T extends Comparable<T>> void swap(T[] array, int firstIndex, int secondIndex) {
-        T temporary = array[firstIndex];
-        array[firstIndex] = array[secondIndex];
-        array[secondIndex] = temporary;
     }
 
 }
