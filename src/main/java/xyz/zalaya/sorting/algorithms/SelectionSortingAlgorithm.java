@@ -11,18 +11,18 @@ public class SelectionSortingAlgorithm implements SortingAlgorithm {
     @Override
     public <T extends Comparable<T>> T[] sort(T[] array) {
         for (int i = 0; i < array.length - 1; i++) {
-            pass(array, i);
+            iteration(array, i);
         }
 
         return array;
     }
 
     /**
-     * Perform a pass of the selection sorting algorithm.
+     * Perform an iteration of the selection sorting algorithm.
      * @param array The array to sort.
      * @param startIndex The index to start sorting from.
      */
-    private <T extends Comparable<T>> void pass(T[] array, int startIndex) {
+    private <T extends Comparable<T>> void iteration(T[] array, int startIndex) {
         swap(array, startIndex, findMinimumElementIndex(array, startIndex));
     }
 

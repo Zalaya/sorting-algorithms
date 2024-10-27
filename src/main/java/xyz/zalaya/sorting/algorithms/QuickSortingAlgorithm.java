@@ -10,23 +10,23 @@ public class QuickSortingAlgorithm implements SortingAlgorithm {
 
     @Override
     public <T extends Comparable<T>> T[] sort(T[] array) {
-        pass(array, 0, array.length - 1);
+        iteration(array, 0, array.length - 1);
 
         return array;
     }
 
     /**
-     * Perform a pass of the quick sorting algorithm.
+     * Perform an iteration of the quick sorting algorithm.
      * @param array The array to sort.
      * @param startIndex The index to start sorting from.
      * @param endIndex The index to end sorting at.
      */
-    private <T extends Comparable<T>> void pass(T[] array, int startIndex, int endIndex) {
+    private <T extends Comparable<T>> void iteration(T[] array, int startIndex, int endIndex) {
         if (startIndex < endIndex) {
             int partitionIndex = partition(array, startIndex, endIndex);
 
-            pass(array, startIndex, partitionIndex - 1);
-            pass(array, partitionIndex + 1, endIndex);
+            iteration(array, startIndex, partitionIndex - 1);
+            iteration(array, partitionIndex + 1, endIndex);
         }
     }
 
