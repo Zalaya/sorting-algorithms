@@ -1,8 +1,7 @@
 package xyz.zalaya.sorting.algorithms;
 
 import xyz.zalaya.sorting.contracts.SortingAlgorithm;
-
-import static xyz.zalaya.sorting.utilities.SwapUtilities.swap;
+import xyz.zalaya.sorting.utilities.ArrayUtilities;
 
 /**
  * Implementation of the selection sorting algorithm.
@@ -25,7 +24,7 @@ public class SelectionSortingAlgorithm implements SortingAlgorithm {
      * @param startIndex The index to start sorting from.
      */
     private <T extends Comparable<T>> void iteration(T[] array, int startIndex) {
-        swap(array, startIndex, findMinimumElementIndex(array, startIndex));
+        ArrayUtilities.swap(array, startIndex, findMinimumElementIndex(array, startIndex));
     }
 
     /**

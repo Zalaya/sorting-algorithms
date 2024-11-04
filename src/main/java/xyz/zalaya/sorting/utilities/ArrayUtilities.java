@@ -1,6 +1,6 @@
 package xyz.zalaya.sorting.utilities;
 
-public class SwapUtilities {
+public class ArrayUtilities {
 
     /**
      * Swap two elements in the array.

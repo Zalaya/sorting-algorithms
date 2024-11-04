@@ -1,8 +1,7 @@
 package xyz.zalaya.sorting.algorithms;
 
 import xyz.zalaya.sorting.contracts.SortingAlgorithm;
-
-import static xyz.zalaya.sorting.utilities.SwapUtilities.swap;
+import xyz.zalaya.sorting.utilities.ArrayUtilities;
 
 /**
  * Implementation of the bubble sorting algorithm.
@@ -32,7 +31,7 @@ public class BubbleSortingAlgorithm implements SortingAlgorithm {
 
         for (int i = 0; i < array.length - startIndex - 1; i++) {
             if (array[i].compareTo(array[i + 1]) > 0) {
-                swap(array, i, i + 1);
+                ArrayUtilities.swap(array, i, i + 1);
                 swapped = true;
             }
         }
